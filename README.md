@@ -1,8 +1,10 @@
-# minimal-react-webpack-babel-setup
+# Comma.AI Visualizer
 
-[![Build Status](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup.svg?branch=master)](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup)
+A simple react app that will display 1,000 trips from the SF Bay Area, each of which is a JSON file containing an array of coordinates and speed sampled at once per second. Ultimately creating a interactive map visualizing the distribution of speeds along trips recorded with our dash cam app Chffr.
 
-Read more about it: [The Minimal React Webpack Babel Setup](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
+![screenshot](https://i.imgur.com/8NrXkpN.jpg)
+
+*You can also find a video demo of the application [here](https://drive.google.com/file/d/1v-TLlvxP4YQXIeShOHzNi8RzBbZtWnSl/view?usp=sharing)*
 
 ## Features
 
@@ -14,7 +16,13 @@ Read more about it: [The Minimal React Webpack Babel Setup](https://www.robinwie
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
+* `git clone https://github.com/ProjectBarks/comma-ai-visualize.git`
 * cd comma-ai-visualize
 * npm run builddb
 * npm start
+
+## Requirements
+
+- PostgreSQL
+- Set the following environment variables: `PGHOST=localhost; PGPORT=5432; PGDATABASE=comma`
+- Node v9.0.0
