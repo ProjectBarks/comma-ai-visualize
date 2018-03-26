@@ -15,7 +15,6 @@ Read more about it: [The Minimal React Webpack Babel Setup](https://www.robinwie
 ## Installation
 
 * `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
-* cd minimal-react-webpack-babel-setup
-* npm install
+* cd comma-ai-visualize
+* npm run builddb
 * npm start
-* visit `http://localhost:8080/`
