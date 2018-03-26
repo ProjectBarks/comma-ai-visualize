@@ -10,7 +10,7 @@ function toRGB(hex){
     const g = parseInt(hex.substring(2,4), 16);
     const b = parseInt(hex.substring(4,6), 16);
 
-    return [r, g, b, 50];
+    return [r, g, b, 150];
 }
 
 
@@ -63,7 +63,7 @@ export default class SpeedDistributionLayer extends Component {
 
         return <DeckGL {...viewport} layers={[
             new LineLayer({
-                strokeWidth: 5,
+                strokeWidth: 5 + Math.max((viewport.zoom - 8), 0),
                 fp64: true,
                 getSourcePosition: d => data[d.sourceIndex].target,
                 getTargetPosition: d => d.target,
